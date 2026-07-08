@@ -61,7 +61,8 @@
         <mxCell id="sel1_c2" value="" style="ellipse;strokeColor=#0000ff;strokeWidth=2;fillColor=none" vertex="1" parent="1">
           <mxGeometry x="432" y="342" width="62" height="48" as="geometry"/>
         </mxCell>
-        <mxCell id="sel1_expr" value="SEL1 = W1 | (ST0 & W2) = (~ST0 & W1) | (ST0 & W2)" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14" vertex="1" parent="1">
+        <!-- ===== 关键修复：这里的 & 全部改成 &amp; ===== -->
+        <mxCell id="sel1_expr" value="SEL1 = W1 | (ST0 &amp; W2) = (~ST0 &amp; W1) | (ST0 &amp; W2)" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14" vertex="1" parent="1">
           <mxGeometry x="350" y="410" width="320" height="25" as="geometry"/>
         </mxCell>
       </root>
