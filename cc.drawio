@@ -1,71 +1,61 @@
 <mxfile host="app.diagrams.net">
-<diagram id="karnaugh_sel_3210" name="SEL3 SEL2 SEL1 SEL0 卡诺图">
-<mxGraphModel dx="1300" dy="880" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1">
-<root>
-<mxCell id="0"/>
-<mxCell id="1" parent="0"/>
-
-<!-- 左上 SEL3 -->
-<mxCell id="t3" value="SEL3 卡诺图 行变量:ST0 列变量:W1W2" style="text;html=1;strokeColor=none;fillColor=none;fontSize=15;fontStyle=1" vertex="1" parent="1">
-<mxGeometry x="20" y="10" width="320" height="30" as="geometry"/>
-</mxCell>
-<mxCell id="tab3" value="&lt;table border='1' cellpadding='7' cellspacing='0'&gt;&lt;tr&gt;&lt;th rowspan='2'&gt;ST0&lt;/th&gt;&lt;th colspan='2'&gt;W1W2&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;01(W2=1)&lt;/th&gt;&lt;th&gt;10(W1=1)&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1" vertex="1" parent="1">
-<mxGeometry x="20" y="45" width="300" height="135" as="geometry"/>
-</mxCell>
-<mxCell id="circ3" value="" style="ellipse;strokeColor=ff0000;strokeWidth=2;fillColor=none" vertex="1" parent="1">
-<mxGeometry x="110" y="112" width="172" height="56" as="geometry"/>
-</mxCell>
-<mxCell id="expr3" value="化简式: SEL3 = ST0" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14" vertex="1" parent="1">
-<mxGeometry x="20" y="190" width="200" height="26" as="geometry"/>
-</mxCell>
-
-<!-- 右上 SEL2 -->
-<mxCell id="t2" value="SEL2 卡诺图 行变量:ST0 列变量:W1W2" style="text;html=1;strokeColor=none;fillColor=none;fontSize=15;fontStyle=1" vertex="1" parent="1">
-<mxGeometry x="360" y="10" width="320" height="30" as="geometry"/>
-</mxCell>
-<mxCell id="tab2" value="&lt;table border='1' cellpadding='7' cellspacing='0'&gt;&lt;tr&gt;&lt;th rowspan='2'&gt;ST0&lt;/th&gt;&lt;th colspan='2'&gt;W1W2&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;01(W2=1)&lt;/th&gt;&lt;th&gt;10(W1=1)&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1" vertex="1" parent="1">
-<mxGeometry x="360" y="45" width="300" height="135" as="geometry"/>
-</mxCell>
-<mxCell id="circ2" value="" style="ellipse;strokeColor=ff0000;strokeWidth=2;fillColor=none" vertex="1" parent="1">
-<mxGeometry x="444" y="60" width="76" height="114" as="geometry"/>
-</mxCell>
-<mxCell id="expr2" value="化简式: SEL2 = W2" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14" vertex="1" parent="1">
-<mxGeometry x="360" y="190" width="200" height="26" as="geometry"/>
-</mxCell>
-
-<!-- 左下 SEL1 核心 -->
-<mxCell id="t1" value="SEL1 卡诺图(核心) 行变量:ST0 列变量:W1W2" style="text;html=1;strokeColor=none;fillColor=none;fontSize=15;fontStyle=1" vertex="1" parent="1">
-<mxGeometry x="20" y="230" width="350" height="30" as="geometry"/>
-</mxCell>
-<mxCell id="tab1" value="&lt;table border='1' cellpadding='7' cellspacing='0'&gt;&lt;tr&gt;&lt;th rowspan='2'&gt;ST0&lt;/th&gt;&lt;th colspan='2'&gt;W1W2&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;01(W2=1)&lt;/th&gt;&lt;th&gt;10(W1=1)&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1" vertex="1" parent="1">
-<mxGeometry x="20" y="265" width="300" height="135" as="geometry"/>
-</mxCell>
-<mxCell id="circ1_r" value="" style="ellipse;strokeColor=ff0000;strokeWidth=2;fillColor=none" vertex="1" parent="1">
-<mxGeometry x="520" y="276" width="76" height="114" as="geometry"/>
-</mxCell>
-<mxCell id="circ1_b" value="" style="ellipse;strokeColor=0000ff;strokeWidth=2;fillColor=none" vertex="1" parent="1">
-<mxGeometry x="108" y="330" width="72" height="52" as="geometry"/>
-</mxCell>
-<!-- ======== 修复点：将 & 全部替换为 &amp; ======== -->
-<mxCell id="expr1" value="化简式: SEL1 = W1 | (ST0 &amp; W2) = (~ST0 &amp; W1) | (ST0 &amp; W2)" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14" vertex="1" parent="1">
-<mxGeometry x="20" y="410" width="340" height="26" as="geometry"/>
-</mxCell>
-
-<!-- 右下 SEL0 -->
-<mxCell id="t0" value="SEL0 卡诺图 行变量:ST0 列变量:W1W2" style="text;html=1;strokeColor=none;fillColor=none;fontSize=15;fontStyle=1" vertex="1" parent="1">
-<mxGeometry x="360" y="230" width="320" height="30" as="geometry"/>
-</mxCell>
-<mxCell id="tab0" value="&lt;table border='1' cellpadding='7' cellspacing='0'&gt;&lt;tr&gt;&lt;th rowspan='2'&gt;ST0&lt;/th&gt;&lt;th colspan='2'&gt;W1W2&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;01(W2=1)&lt;/th&gt;&lt;th&gt;10(W1=1)&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1" vertex="1" parent="1">
-<mxGeometry x="360" y="265" width="300" height="135" as="geometry"/>
-</mxCell>
-<mxCell id="circ0" value="" style="ellipse;strokeColor=ff0000;strokeWidth=2;fillColor=none" vertex="1" parent="1">
-<mxGeometry x="592" y="276" width="76" height="114" as="geometry"/>
-</mxCell>
-<mxCell id="expr0" value="化简式: SEL0 = W1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14" vertex="1" parent="1">
-<mxGeometry x="360" y="410" width="200" height="26" as="geometry"/>
-</mxCell>
-
-</root>
-</mxGraphModel>
-</diagram>
+  <diagram id="karnaugh_sel_3210" name="SEL3 SEL2 SEL1 SEL0 卡诺图">
+    <mxGraphModel dx="926" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=15;fontStyle=1" value="SEL3 卡诺图" vertex="1">
+          <mxGeometry height="30" width="320" x="20" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="tab3" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1" value="&lt;table border=&#39;1&#39; cellpadding=&#39;7&#39; cellspacing=&#39;0&#39;&gt;&lt;tr&gt;&lt;th rowspan=&#39;2&#39;&gt;ST0&lt;/th&gt;&lt;th colspan=&#39;2&#39;&gt;W1W2&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;01(W2=1)&lt;/th&gt;&lt;th&gt;10(W1=1)&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="135" width="300" x="20" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="circ3" parent="1" style="ellipse;strokeColor=ff0000;strokeWidth=2;fillColor=none" value="" vertex="1">
+          <mxGeometry height="56" width="172" x="110" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="expr3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14" value="化简式: SEL3 = ST0" vertex="1">
+          <mxGeometry height="26" width="200" x="20" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=15;fontStyle=1" value="SEL2卡诺图" vertex="1">
+          <mxGeometry height="30" width="320" x="360" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="tab2" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1" value="&lt;table border=&#39;1&#39; cellpadding=&#39;7&#39; cellspacing=&#39;0&#39;&gt;&lt;tr&gt;&lt;th rowspan=&#39;2&#39;&gt;ST0&lt;/th&gt;&lt;th colspan=&#39;2&#39;&gt;W1W2&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;01(W2=1)&lt;/th&gt;&lt;th&gt;10(W1=1)&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="135" width="300" x="360" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="circ2" parent="1" style="ellipse;strokeColor=ff0000;strokeWidth=2;fillColor=none" value="" vertex="1">
+          <mxGeometry height="114" width="76" x="444" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="expr2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14" value="化简式: SEL2 = W2" vertex="1">
+          <mxGeometry height="26" width="200" x="360" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=15;fontStyle=1" value="SEL1 卡诺图" vertex="1">
+          <mxGeometry height="30" width="350" x="20" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="tab1" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1" value="&lt;table border=&quot;1&quot; cellpadding=&quot;7&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th rowspan=&quot;2&quot;&gt;ST0&lt;/th&gt;&lt;th colspan=&quot;2&quot;&gt;W1W2&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;01(W2=1)&lt;/th&gt;&lt;th&gt;10(W1=1)&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="135" width="300" x="20" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="circ1_r" parent="1" style="ellipse;strokeColor=ff0000;strokeWidth=2;fillColor=none" value="" vertex="1">
+          <mxGeometry height="114" width="76" x="520" y="276" as="geometry" />
+        </mxCell>
+        <mxCell id="circ1_b" parent="1" style="ellipse;strokeColor=0000ff;strokeWidth=2;fillColor=none" value="" vertex="1">
+          <mxGeometry height="52" width="72" x="108" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="expr1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14" value="化简式: SEL1 =&amp;nbsp; (~ST0 &amp;amp; W1) | (ST0 &amp;amp; W2)" vertex="1">
+          <mxGeometry height="26" width="340" x="20" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="t0" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=15;fontStyle=1" value="SEL0 卡诺图" vertex="1">
+          <mxGeometry height="30" width="320" x="360" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="tab0" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1" value="&lt;table border=&#39;1&#39; cellpadding=&#39;7&#39; cellspacing=&#39;0&#39;&gt;&lt;tr&gt;&lt;th rowspan=&#39;2&#39;&gt;ST0&lt;/th&gt;&lt;th colspan=&#39;2&#39;&gt;W1W2&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;01(W2=1)&lt;/th&gt;&lt;th&gt;10(W1=1)&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="135" width="300" x="360" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="circ0" parent="1" style="ellipse;strokeColor=ff0000;strokeWidth=2;fillColor=none" value="" vertex="1">
+          <mxGeometry height="114" width="76" x="592" y="276" as="geometry" />
+        </mxCell>
+        <mxCell id="expr0" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14" value="化简式: SEL0 = W1" vertex="1">
+          <mxGeometry height="26" width="200" x="444" y="410" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
 </mxfile>
