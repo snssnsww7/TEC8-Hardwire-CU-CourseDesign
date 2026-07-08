@@ -9,7 +9,7 @@
 <mxCell id="t3" value="SEL3 卡诺图 行变量:ST0 列变量:W1W2" style="text;html=1;strokeColor=none;fillColor=none;fontSize=15;fontStyle=1" vertex="1" parent="1">
 <mxGeometry x="20" y="10" width="320" height="30" as="geometry"/>
 </mxCell>
-<mxCell id="tab3" value="<table border='1' cellpadding='7' cellspacing='0'><tr><th rowspan='2'>ST0</th><th colspan='2'>W1W2</th></tr><tr><th>01(W2=1)</th><th>10(W1=1)</th></tr><tr><td>0</td><td>0</td><td>0</td></tr><tr><td>1</td><td>1</td><td>1</td></tr></table>" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1" vertex="1" parent="1">
+<mxCell id="tab3" value="&lt;table border='1' cellpadding='7' cellspacing='0'&gt;&lt;tr&gt;&lt;th rowspan='2'&gt;ST0&lt;/th&gt;&lt;th colspan='2'&gt;W1W2&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;01(W2=1)&lt;/th&gt;&lt;th&gt;10(W1=1)&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1" vertex="1" parent="1">
 <mxGeometry x="20" y="45" width="300" height="135" as="geometry"/>
 </mxCell>
 <mxCell id="circ3" value="" style="ellipse;strokeColor=ff0000;strokeWidth=2;fillColor=none" vertex="1" parent="1">
@@ -23,7 +23,7 @@
 <mxCell id="t2" value="SEL2 卡诺图 行变量:ST0 列变量:W1W2" style="text;html=1;strokeColor=none;fillColor=none;fontSize=15;fontStyle=1" vertex="1" parent="1">
 <mxGeometry x="360" y="10" width="320" height="30" as="geometry"/>
 </mxCell>
-<mxCell id="tab2" value="<table border='1' cellpadding='7' cellspacing='0'><tr><th rowspan='2'>ST0</th><th colspan='2'>W1W2</th></tr><tr><th>01(W2=1)</th><th>10(W1=1)</th></tr><tr><td>0</td><td>1</td><td>0</td></tr><tr><td>1</td><td>1</td><td>0</td></tr></table>" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1" vertex="1" parent="1">
+<mxCell id="tab2" value="&lt;table border='1' cellpadding='7' cellspacing='0'&gt;&lt;tr&gt;&lt;th rowspan='2'&gt;ST0&lt;/th&gt;&lt;th colspan='2'&gt;W1W2&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;01(W2=1)&lt;/th&gt;&lt;th&gt;10(W1=1)&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1" vertex="1" parent="1">
 <mxGeometry x="360" y="45" width="300" height="135" as="geometry"/>
 </mxCell>
 <mxCell id="circ2" value="" style="ellipse;strokeColor=ff0000;strokeWidth=2;fillColor=none" vertex="1" parent="1">
@@ -37,7 +37,7 @@
 <mxCell id="t1" value="SEL1 卡诺图(核心) 行变量:ST0 列变量:W1W2" style="text;html=1;strokeColor=none;fillColor=none;fontSize=15;fontStyle=1" vertex="1" parent="1">
 <mxGeometry x="20" y="230" width="350" height="30" as="geometry"/>
 </mxCell>
-<mxCell id="tab1" value="<table border='1' cellpadding='7' cellspacing='0'><tr><th rowspan='2'>ST0</th><th colspan='2'>W1W2</th></tr><tr><th>01(W2=1)</th><th>10(W1=1)</th></tr><tr><td>0</td><td>0</td><td>1</td></tr><tr><td>1</td><td>1</td><td>1</td></tr></table>" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1" vertex="1" parent="1">
+<mxCell id="tab1" value="&lt;table border='1' cellpadding='7' cellspacing='0'&gt;&lt;tr&gt;&lt;th rowspan='2'&gt;ST0&lt;/th&gt;&lt;th colspan='2'&gt;W1W2&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;01(W2=1)&lt;/th&gt;&lt;th&gt;10(W1=1)&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1" vertex="1" parent="1">
 <mxGeometry x="20" y="265" width="300" height="135" as="geometry"/>
 </mxCell>
 <mxCell id="circ1_r" value="" style="ellipse;strokeColor=ff0000;strokeWidth=2;fillColor=none" vertex="1" parent="1">
@@ -46,7 +46,8 @@
 <mxCell id="circ1_b" value="" style="ellipse;strokeColor=0000ff;strokeWidth=2;fillColor=none" vertex="1" parent="1">
 <mxGeometry x="108" y="330" width="72" height="52" as="geometry"/>
 </mxCell>
-<mxCell id="expr1" value="化简式: SEL1 = W1 | (ST0 & W2) = (~ST0 & W1) | (ST0 & W2)" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14" vertex="1" parent="1">
+<!-- ======== 修复点：将 & 全部替换为 &amp; ======== -->
+<mxCell id="expr1" value="化简式: SEL1 = W1 | (ST0 &amp; W2) = (~ST0 &amp; W1) | (ST0 &amp; W2)" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14" vertex="1" parent="1">
 <mxGeometry x="20" y="410" width="340" height="26" as="geometry"/>
 </mxCell>
 
@@ -54,7 +55,7 @@
 <mxCell id="t0" value="SEL0 卡诺图 行变量:ST0 列变量:W1W2" style="text;html=1;strokeColor=none;fillColor=none;fontSize=15;fontStyle=1" vertex="1" parent="1">
 <mxGeometry x="360" y="230" width="320" height="30" as="geometry"/>
 </mxCell>
-<mxCell id="tab0" value="<table border='1' cellpadding='7' cellspacing='0'><tr><th rowspan='2'>ST0</th><th colspan='2'>W1W2</th></tr><tr><th>01(W2=1)</th><th>10(W1=1)</th></tr><tr><td>0</td><td>0</td><td>1</td></tr><tr><td>1</td><td>0</td><td>1</td></tr></table>" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1" vertex="1" parent="1">
+<mxCell id="tab0" value="&lt;table border='1' cellpadding='7' cellspacing='0'&gt;&lt;tr&gt;&lt;th rowspan='2'&gt;ST0&lt;/th&gt;&lt;th colspan='2'&gt;W1W2&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;01(W2=1)&lt;/th&gt;&lt;th&gt;10(W1=1)&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1" vertex="1" parent="1">
 <mxGeometry x="360" y="265" width="300" height="135" as="geometry"/>
 </mxCell>
 <mxCell id="circ0" value="" style="ellipse;strokeColor=ff0000;strokeWidth=2;fillColor=none" vertex="1" parent="1">
