@@ -1,60 +1,60 @@
 <mxfile host="app.diagrams.net">
-  <diagram name="顺序式与流水线指令周期对比">
-    <mxGraphModel dx="1000" dy="1100" grid="1" gridSize="10">
+  <diagram name="流水线对比图">
+    <mxGraphModel dx="900" dy="900" grid="1" gridSize="10">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
 
-        <!-- 第一组：顺序式指令周期 -->
-        <!-- 第一个周期块：取指令+执行 -->
-        <mxCell id="sq_fetch1" value="取指令" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000" vertex="1" parent="1">
-          <mxGeometry x="80" y="80" width="180" height="120"/>
+        <!-- 上方：顺序式指令周期 -->
+        <!-- 第一组方块 取指令+执行 -->
+        <mxCell id="s1f" value="取指令" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#000" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="160" height="100"/>
         </mxCell>
-        <mxCell id="sq_exec1" value="执行" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000" vertex="1" parent="1">
-          <mxGeometry x="260" y="80" width="180" height="120"/>
+        <mxCell id="s1e" value="执行" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#000" vertex="1" parent="1">
+          <mxGeometry x="220" y="40" width="160" height="100"/>
         </mxCell>
-        <!-- 第二个周期块：取指令+执行（错开右移） -->
-        <mxCell id="sq_fetch2" value="取指令" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000" vertex="1" parent="1">
-          <mxGeometry x="440" y="200" width="180" height="120"/>
+        <!-- 第二组方块 错开右下方 -->
+        <mxCell id="s2f" value="取指令" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#000" vertex="1" parent="1">
+          <mxGeometry x="380" y="140" width="160" height="100"/>
         </mxCell>
-        <mxCell id="sq_exec2" value="执行" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000" vertex="1" parent="1">
-          <mxGeometry x="620" y="200" width="180" height="120"/>
+        <mxCell id="s2e" value="执行" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#000" vertex="1" parent="1">
+          <mxGeometry x="540" y="140" width="160" height="100"/>
         </mxCell>
-        <!-- 顺序式大括号文字 -->
-        <mxCell id="sq_label" value="顺序式指令周期" style="text;html=1;fontSize=16" vertex="1" parent="1">
-          <mxGeometry x="320" y="340" width="220" height="40"/>
+        <!-- 顺序式大括号+文字 -->
+        <mxCell id="txt_seq" value="顺序式指令周期" style="text;html=1;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="260" y="260" width="180" height="30"/>
         </mxCell>
-        <mxCell id="sq_brace" value="「」" style="text;html=1;fontSize=60;align=center" vertex="1" parent="1">
-          <mxGeometry x="300" y="310" width="260" height="80"/>
+        <mxCell id="brace_seq" value="⎡ ⎤" style="text;html=1;fontSize=50;textAlign=center" vertex="1" parent="1">
+          <mxGeometry x="240" y="230" width="220" height="70"/>
         </mxCell>
 
         <!-- 中间向下箭头 -->
-        <mxCell id="arrow_down" edge="1" parent="1" source="" target="">
-          <mxGeometry x="480" y="400" width="0" height="80"/>
-          <mxStyle endArrow="block;html=1;strokeWidth=2"/>
+        <mxCell id="arrow_mid" edge="1" parent="1">
+          <mxGeometry x="400" y="310" width="0" height="70"/>
+          <mxStyle endArrow="block;strokeWidth=2"/>
         </mxCell>
 
-        <!-- 第二组：流水线指令周期 -->
-        <!-- 第一行：取指令+执行 -->
-        <mxCell id="pl_fetch1" value="取指令" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000" vertex="1" parent="1">
-          <mxGeometry x="80" y="500" width="180" height="120"/>
+        <!-- 下方：流水线指令周期 -->
+        <!-- 上排方块 -->
+        <mxCell id="p1f" value="取指令" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#000" vertex="1" parent="1">
+          <mxGeometry x="60" y="400" width="160" height="100"/>
         </mxCell>
-        <mxCell id="pl_exec1" value="执行" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000" vertex="1" parent="1">
-          <mxGeometry x="260" y="500" width="180" height="120"/>
+        <mxCell id="p1e" value="执行" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#000" vertex="1" parent="1">
+          <mxGeometry x="220" y="400" width="160" height="100"/>
         </mxCell>
-        <!-- 第二行：取指令+执行（向下对齐重叠） -->
-        <mxCell id="pl_fetch2" value="取指令" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000" vertex="1" parent="1">
-          <mxGeometry x="260" y="620" width="180" height="120"/>
+        <!-- 下排方块 左移重叠 -->
+        <mxCell id="p2f" value="取指令" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#000" vertex="1" parent="1">
+          <mxGeometry x="220" y="500" width="160" height="100"/>
         </mxCell>
-        <mxCell id="pl_exec2" value="执行" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000" vertex="1" parent="1">
-          <mxGeometry x="440" y="620" width="180" height="120"/>
+        <mxCell id="p2e" value="执行" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#000" vertex="1" parent="1">
+          <mxGeometry x="380" y="500" width="160" height="100"/>
         </mxCell>
-        <!-- 流水线大括号文字 -->
-        <mxCell id="pl_label" value="流水线指令周期" style="text;html=1;fontSize=16" vertex="1" parent="1">
-          <mxGeometry x="320" y="760" width="220" height="40"/>
+        <!-- 流水线大括号+文字 -->
+        <mxCell id="txt_pipe" value="流水线指令周期" style="text;html=1;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="260" y="620" width="180" height="30"/>
         </mxCell>
-        <mxCell id="pl_brace" value="「」" style="text;html=1;fontSize=60;align=center" vertex="1" parent="1">
-          <mxGeometry x="300" y="730" width="260" height="80"/>
+        <mxCell id="brace_pipe" value="⎡ ⎤" style="text;html=1;fontSize=50;textAlign=center" vertex="1" parent="1">
+          <mxGeometry x="240" y="590" width="220" height="70"/>
         </mxCell>
       </root>
     </mxGraphModel>
