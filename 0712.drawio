@@ -1,0 +1,329 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="flowchart" name="控制器微程序流程图">
+    <mxGraphModel dx="1400" dy="980" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <!-- 顶部CLR椭圆 -->
+        <mxCell id="clr_ellipse" value="CLR" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="640" y="20" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <!-- 分支菱形 SWC SWB SWA -->
+        <mxCell id="swc_swb_swa_dia" value="SWC SWB SWA" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="560" y="70" width="260" height="60" as="geometry"/>
+        </mxCell>
+        <!-- CLR到菱形连线 -->
+        <mxCell id="link_clr_dia" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="clr_ellipse" target="swc_swb_swa_dia">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- 顶部分支标签文本 -->
+        <mxCell id="lbl_100" value="100" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="400" y="110" width="30" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_011" value="011" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="490" y="110" width="30" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_000" value="000" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="660" y="110" width="30" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_010" value="010" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="760" y="110" width="30" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_001" value="001" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="880" y="110" width="30" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_write_reg" value="写寄存器" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="360" y="130" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_read_reg" value="读寄存器" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="460" y="130" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_fetch" value="取指" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="640" y="130" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_read_mem" value="读存储器" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="740" y="130" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_write_mem" value="写存储器" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="860" y="130" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <!-- W1 W2 右侧竖标签 -->
+        <mxCell id="lbl_w1_top" value="W1" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="1260" y="160" width="30" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_w2_top" value="W2" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="1260" y="280" width="30" height="20" as="geometry"/>
+        </mxCell>
+        <!-- 第一组：100 写寄存器 STO=0 / STO=1 W1方块 -->
+        <mxCell id="blk_100_sto0_w1" value="SBUS<br>SEL3 = 0<br>SEL2 = 0<br>SEL1 = 1<br>SEL0 = 1<br>SELCTL<br>DRW STOP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="220" y="160" width="110" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_sto0_100" value="STO=0" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="230" y="145" width="40" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="blk_100_sto1_w1" value="SBUS<br>SEL3 = 1<br>SEL2 = 1<br>SEL1 = 0<br>SEL0 = 1<br>SELCTL<br>DRW STOP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="340" y="160" width="110" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_sto1_100" value="STO=1" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="350" y="145" width="40" height="18" as="geometry"/>
+        </mxCell>
+        <!-- 100 W2方块 -->
+        <mxCell id="blk_100_sto0_w2" value="SBUS<br>SEL3 = 0<br>SEL2 = 1<br>SEL1 = 0<br>SEL0 = 0<br>SELCTL<br>STOP SST0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="220" y="270" width="110" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="blk_100_sto1_w2" value="SBUS<br>SEL3 = 1<br>SEL2 = 1<br>SEL1 = 1<br>SEL0 = 0<br>SELCTL<br>DRW STOP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="340" y="270" width="110" height="90" as="geometry"/>
+        </mxCell>
+        <!-- 011 读寄存器 W1 -->
+        <mxCell id="blk_011_sto0_w1" value="SEL3 = 0<br>SEL2 = 0<br>SEL1 = 1<br>SEL0 = 1<br>SELCTL<br>STOP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="470" y="160" width="90" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_sto0_011" value="STO=0" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="480" y="145" width="40" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="blk_011_sto1_w1" value="SEL3 = 1<br>SEL2 = 0<br>SEL1 = 0<br>SEL0 = 1<br>SELCTL<br>STOP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="570" y="160" width="90" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_sto1_011" value="STO=1" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="580" y="145" width="40" height="18" as="geometry"/>
+        </mxCell>
+        <!-- 011 W2 -->
+        <mxCell id="blk_011_w2" value="SEL3 = 1<br>SEL2 = 0<br>SEL1 = 1<br>SEL0 = 1<br>SELCTL<br>STOP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="490" y="270" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <!-- 010 读存储器 W1 -->
+        <mxCell id="blk_010_sto0_w1" value="SBUS LAR<br>STOP<br>SST0<br>SHORT<br>SELCTL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="690" y="160" width="90" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_sto0_010" value="STO=0" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="700" y="145" width="40" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="blk_010_sto1_w1" value="MBUS ARINC<br>STOP<br>SST0<br>SHORT<br>SELCTL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="790" y="160" width="90" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_sto1_010" value="STO=1" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="800" y="145" width="40" height="18" as="geometry"/>
+        </mxCell>
+        <!-- 001 写存储器 W1 -->
+        <mxCell id="blk_001_sto0_w1" value="SBUS LAR<br>STOP<br>SST0<br>SHORT<br>SELCTL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="910" y="160" width="90" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_sto0_001" value="STO=0" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="920" y="145" width="40" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="blk_001_sto1_w1" value="SBUS MEMW<br>ARINC<br>STOP<br>SST0<br>SHORT<br>SELCTL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="1010" y="160" width="90" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_sto1_001" value="STO=1" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="1020" y="145" width="40" height="18" as="geometry"/>
+        </mxCell>
+        <!-- 水平分隔线1 -->
+        <mxCell id="line_h1" value="" style="endArrow=none;html=1;strokeWidth=1" edge="1" parent="1">
+          <mxGeometry x="180" y="380" width="1100" height="0" as="geometry"/>
+        </mxCell>
+        <!-- LR PCINC方块 -->
+        <mxCell id="blk_lr_pcinc" value="LR<br>PCIN C" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="600" y="400" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <!-- W1右侧中间标签 -->
+        <mxCell id="lbl_w1_mid" value="W1" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="1260" y="420" width="30" height="20" as="geometry"/>
+        </mxCell>
+        <!-- IR7~R4菱形 -->
+        <mxCell id="ir7_r4_dia" value="IR7~R4" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="540" y="480" width="240" height="60" as="geometry"/>
+        </mxCell>
+        <!-- IR7~IR4 顶部指令标签 -->
+        <mxCell id="lbl_ir0001" value="0001 ADD" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="160" y="460" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_ir0010" value="0010 SUB" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="260" y="460" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_ir0011" value="0011 AND" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="360" y="460" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_ir0100" value="0100 INC" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="460" y="460" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_ir0101" value="0101 LD" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="545" y="460" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_ir0110" value="0110 ST" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="635" y="460" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_ir0111" value="0111 JC" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="720" y="460" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_ir1000" value="1000 JZ" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="830" y="460" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_ir1001" value="1001 JMP" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="940" y="460" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_ir1110" value="1110 STP" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="1050" y="460" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <!-- W2 右侧中下标签 -->
+        <mxCell id="lbl_w2_mid" value="W2" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="1260" y="540" width="30" height="20" as="geometry"/>
+        </mxCell>
+        <!-- ADD方块 -->
+        <mxCell id="blk_add" value="S = 1001<br>CIN<br>ABUS<br>DRW<br>LDZ<br>LDC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="140" y="520" width="80" height="100" as="geometry"/>
+        </mxCell>
+        <!-- SUB方块 -->
+        <mxCell id="blk_sub" value="S = 0110<br>ABUS<br>DRW<br>LDZ<br>LDC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="240" y="520" width="80" height="100" as="geometry"/>
+        </mxCell>
+        <!-- AND方块 -->
+        <mxCell id="blk_and" value="M<br>S = 1011<br>ABUS<br>DRW<br>LDZ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="340" y="520" width="80" height="100" as="geometry"/>
+        </mxCell>
+        <!-- INC方块 -->
+        <mxCell id="blk_inc" value="S = 0000<br>ABUS<br>DRW<br>LDZ<br>LDC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="440" y="520" width="80" height="100" as="geometry"/>
+        </mxCell>
+        <!-- LD方块 -->
+        <mxCell id="blk_ld" value="M<br>S = 1010<br>ABUS<br>LAR<br>LONG" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="530" y="520" width="80" height="100" as="geometry"/>
+        </mxCell>
+        <!-- ST方块 -->
+        <mxCell id="blk_st" value="M<br>S = 1111<br>ABUS<br>LAR<br>LONG" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="620" y="520" width="80" height="100" as="geometry"/>
+        </mxCell>
+        <!-- JC 进位C菱形 -->
+        <mxCell id="jc_c_dia" value="C" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="710" y="530" width="60" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_c0" value="C=0" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="680" y="510" width="30" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_c1" value="C=1" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="780" y="510" width="30" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="blk_jc_c0" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="680" y="600" width="60" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="blk_jc_c1" value="PCADD" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="770" y="600" width="70" height="30" as="geometry"/>
+        </mxCell>
+        <!-- JZ 零标志Z菱形 -->
+        <mxCell id="jz_z_dia" value="Z" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="840" y="530" width="60" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_z0" value="Z=0" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="810" y="510" width="30" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="lbl_z1" value="Z=1" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="910" y="510" width="30" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="blk_jz_z0" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="810" y="600" width="60" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="blk_jz_z1" value="PCADD" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="900" y="600" width="70" height="30" as="geometry"/>
+        </mxCell>
+        <!-- JMP方块 -->
+        <mxCell id="blk_jmp" value="M<br>S=1111<br>ABUS<br>LPC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="930" y="520" width="80" height="100" as="geometry"/>
+        </mxCell>
+        <!-- STP方块 -->
+        <mxCell id="blk_stp" value="STOP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="1040" y="520" width="70" height="100" as="geometry"/>
+        </mxCell>
+        <!-- 水平分隔线2 -->
+        <mxCell id="line_h2" value="" style="endArrow=none;html=1;strokeWidth=1" edge="1" parent="1">
+          <mxGeometry x="180" y="660" width="1100" height="0" as="geometry"/>
+        </mxCell>
+        <!-- W3 右侧底部标签 -->
+        <mxCell id="lbl_w3" value="W3" style="text;html=1" vertex="1" parent="1">
+          <mxGeometry x="1260" y="690" width="30" height="20" as="geometry"/>
+        </mxCell>
+        <!-- W3 DRW MBUS + MEMW方块 -->
+        <mxCell id="blk_w3_drw" value="DRW MBUS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="510" y="680" width="80" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="blk_w3_memw" value="M<br>S = 1010<br>ABUS MEMW" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9933;strokeColor=#000000" vertex="1" parent="1">
+          <mxGeometry x="610" y="680" width="90" height="60" as="geometry"/>
+        </mxCell>
+        <!-- 垂直分隔线 右侧三条 W1 W2 W3 -->
+        <mxCell id="line_v_w" value="" style="endArrow=none;html=1;strokeWidth=1" edge="1" parent="1">
+          <mxGeometry x="1250" y="150" width="0" height="600" as="geometry"/>
+        </mxCell>
+        <!-- 顶层分支连线 SWC SWB SWA 菱形向下 -->
+        <mxCell id="link_dia_100" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="swc_swb_swa_dia" target="blk_100_sto0_w1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="link_dia_011" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="swc_swb_swa_dia" target="blk_011_sto0_w1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="link_dia_000" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="swc_swb_swa_dia" target="blk_lr_pcinc">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="link_dia_010" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="swc_swb_swa_dia" target="blk_010_sto0_w1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="link_dia_001" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="swc_swb_swa_dia" target="blk_001_sto0_w1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- LR PCINC 到 IR7~R4菱形连线 -->
+        <mxCell id="link_lr_ir" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="blk_lr_pcinc" target="ir7_r4_dia">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- IR菱形到各指令方块连线 -->
+        <mxCell id="link_ir_add" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="ir7_r4_dia" target="blk_add">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="link_ir_sub" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="ir7_r4_dia" target="blk_sub">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="link_ir_and" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="ir7_r4_dia" target="blk_and">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="link_ir_inc" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="ir7_r4_dia" target="blk_inc">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="link_ir_ld" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="ir7_r4_dia" target="blk_ld">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="link_ir_st" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="ir7_r4_dia" target="blk_st">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="link_ir_jc" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="ir7_r4_dia" target="jc_c_dia">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="link_ir_jz" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="ir7_r4_dia" target="jz_z_dia">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="link_ir_jmp" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="ir7_r4_dia" target="blk_jmp">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="link_ir_stp" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="ir7_r4_dia" target="blk_stp">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- JC C分支连线 -->
+        <mxCell id="link_c0" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="jc_c_dia" target="blk_jc_c0">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="link_c1" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="jc_c_dia" target="blk_jc_c1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- JZ Z分支连线 -->
+        <mxCell id="link_z0" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="jz_z_dia" target="blk_jz_z0">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="link_z1" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="jz_z_dia" target="blk_jz_z1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- LD、ST向下连W3 -->
+        <mxCell id="link_ld_w3" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="blk_ld" target="blk_w3_drw">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="link_st_w3" value="" style="endArrow=block;html=1;strokeWidth=1" edge="1" parent="1" source="blk_st" target="blk_w3_memw">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
