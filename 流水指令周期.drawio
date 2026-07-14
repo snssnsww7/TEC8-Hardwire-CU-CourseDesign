@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="910" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;取指令&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-7" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;执行指令&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="c4Dua6mdPl0OOS5IZRHs-0" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;取指令&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="160" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="c4Dua6mdPl0OOS5IZRHs-1" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;执行指令&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="240" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="c4Dua6mdPl0OOS5IZRHs-2" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="360" y="119" as="sourcePoint" />
+            <mxPoint x="440" y="119" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4Dua6mdPl0OOS5IZRHs-3" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;取指令&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="480" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="c4Dua6mdPl0OOS5IZRHs-4" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;执行指令&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="560" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="c4Dua6mdPl0OOS5IZRHs-5" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;取指令&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="560" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="c4Dua6mdPl0OOS5IZRHs-6" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;执行指令&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="640" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="c4Dua6mdPl0OOS5IZRHs-7" parent="WIyWlLk6GJQsqaUBKTNV-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="顺序" vertex="1">
+          <mxGeometry height="30" width="60" x="130" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="c4Dua6mdPl0OOS5IZRHs-8" parent="WIyWlLk6GJQsqaUBKTNV-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="流水线" vertex="1">
+          <mxGeometry height="30" width="60" x="570" y="190" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
